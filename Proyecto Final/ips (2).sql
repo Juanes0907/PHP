@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-12-2024 a las 20:30:05
+-- Tiempo de generación: 06-12-2024 a las 20:42:02
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -71,6 +71,16 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`nombreProducto`, `valorProducto`, `cantidadProducto`) VALUES
+('Pruebas de PPD', 12000, 1000),
+('Vacuna de Neumococo', 5000, 1500),
+('Vacuna de Polio', 9500, 500),
+('Vacuna de Varicela', 8000, 800);
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -108,7 +118,7 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT de la tabla `factura`
 --
 ALTER TABLE `factura`
-  MODIFY `numeroFactura` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `numeroFactura` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restricciones para tablas volcadas
