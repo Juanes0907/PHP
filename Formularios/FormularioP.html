@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <h1>Formulario</h1>
+    <div>
+    <form action="FormularioP.php" method="post" id="form">
+    
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label for="correo">Email:</label>
+        <input type="email" name="correo" required><br><br>
+
+        <label for="genero">Género:</label><br>
+        <input type="radio" name="gender" value="Hombre" required>Hombre<br>
+        <input type="radio" name="gender" value="Mujer" required>Mujer<br>
+        <input type="radio" name="gender" value="No específico" required>No específico<br><br>
+
+        <label for="fecha">Ingrese su fecha de nacimiento</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="telefono">Número de teléfono:</label>
+        <input type="number" name="telefono" required><br><br>
+
+        <label for="sangre">¿Cuál es tu tipo sangre?</label><br>
+        <select name="sangre" id="blood"><br>
+          <option value="A">A+</option>
+          <option value="A">A-</option>
+          <option value="A">B+</option>
+          <option value="A">B-</option>
+          <option value="A">AB+</option>
+          <option value="A">O+</option>
+          <option value="A">A-</option>
+        </select><br><br>
+
+        <label for="comentario">Descríbase a usted mismo:</label><br>
+        <textarea name="comentario" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Enviar respuestas</button>
+        <button type="reset">Reinicio de respuestas</button>
+    </form>
+    </div>
+</body>
+
+</html>

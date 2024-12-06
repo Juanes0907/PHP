@@ -1,0 +1,4 @@
+Este es un archivo de ejemplo
+Que se encarga de demostrar
+La manera en la que se manejan archivos
+En PHP
