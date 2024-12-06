@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal - Salud</title>
+    <!-- Vincular Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f8fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .hero-section {
+            background-color: #007bff; /* Azul más fuerte */
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+        .menu-button {
+            font-size: 1.25rem;
+            padding: 15px 25px;
+            width: 250px;
+        }
+        .menu-container {
+            margin-top: 50px;
+        }
+        .menu-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-card:hover {
+            transform: translateY(-10px);
+            transition: 0.3s;
+        }
+        .card-body {
+            text-align: center;
+        }
+        .navbar-brand img {
+            width: 50px; /* Tamaño del logo */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación con el logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007bff;">
+    </nav>
+
+    <!-- Sección Hero (Encabezado) -->
+    <div class="hero-section">
+        <h1>Bienvenido al Menú de Salud</h1>
+        <p>Realiza distintas tareas para tu empresa</p>
+    </div>
+
+    <!-- Contenedor del menú -->
+    <div class="container menu-container">
+        <div class="row justify-content-center">
+            <!-- Card 1: Información de Salud -->
+            <div class="col-md-4 mb-4">
+                <div class="card menu-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clientes</h5>
+                        <p class="card-text">Realiza acciones referentes a los clientes.</p>
+                        <a href="Form.html" class="btn btn-primary menu-button">Ir a Clientes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Consultas Médicas -->
+            <div class="col-md-4 mb-4">
+                <div class="card menu-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Productos</h5>
+                        <p class="card-text">Realiza acciones referentes a los productos.</p>
+                        <a href="producto.html" class="btn btn-primary menu-button">Ir a Productos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Emergencias y Primeros Auxilios -->
+            <div class="col-md-4 mb-4">
+                <div class="card menu-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Facturas</h5>
+                        <p class="card-text">Realiza acciones referentes a las facturas.</p>
+                        <a href="factura.html" class="btn btn-primary menu-button">Ir a Facturas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace a JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
